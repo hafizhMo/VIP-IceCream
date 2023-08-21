@@ -16,6 +16,11 @@
 		FB29E7AD2A93789000F4FD70 /* icecream.json in Resources */ = {isa = PBXBuildFile; fileRef = FB29E7AC2A93789000F4FD70 /* icecream.json */; };
 		FB29E7AF2A93796B00F4FD70 /* CreateIceCreamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB29E7AE2A93796B00F4FD70 /* CreateIceCreamView.swift */; };
 		FB29E7B22A9385D600F4FD70 /* CreateIceCreamImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB29E7B12A9385D600F4FD70 /* CreateIceCreamImageView.swift */; };
+		FB29E7B52A93B81E00F4FD70 /* CreateIceCreamModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB29E7B42A93B81E00F4FD70 /* CreateIceCreamModel.swift */; };
+		FB29E7B72A93B96A00F4FD70 /* CreateIceCreamInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB29E7B62A93B96A00F4FD70 /* CreateIceCreamInteractor.swift */; };
+		FB29E7BA2A93B9F200F4FD70 /* CodableBundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB29E7B92A93B9F200F4FD70 /* CodableBundleExtension.swift */; };
+		FB29E7BC2A93BA4B00F4FD70 /* CreateIceCreamPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB29E7BB2A93BA4B00F4FD70 /* CreateIceCreamPresenter.swift */; };
+		FB29E7BE2A93BBAF00F4FD70 /* CreateIceCreamConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB29E7BD2A93BBAF00F4FD70 /* CreateIceCreamConfigurator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +34,11 @@
 		FB29E7AC2A93789000F4FD70 /* icecream.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = icecream.json; sourceTree = "<group>"; };
 		FB29E7AE2A93796B00F4FD70 /* CreateIceCreamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateIceCreamView.swift; sourceTree = "<group>"; };
 		FB29E7B12A9385D600F4FD70 /* CreateIceCreamImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateIceCreamImageView.swift; sourceTree = "<group>"; };
+		FB29E7B42A93B81E00F4FD70 /* CreateIceCreamModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateIceCreamModel.swift; sourceTree = "<group>"; };
+		FB29E7B62A93B96A00F4FD70 /* CreateIceCreamInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateIceCreamInteractor.swift; sourceTree = "<group>"; };
+		FB29E7B92A93B9F200F4FD70 /* CodableBundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableBundleExtension.swift; sourceTree = "<group>"; };
+		FB29E7BB2A93BA4B00F4FD70 /* CreateIceCreamPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateIceCreamPresenter.swift; sourceTree = "<group>"; };
+		FB29E7BD2A93BBAF00F4FD70 /* CreateIceCreamConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateIceCreamConfigurator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +76,7 @@
 				FB29E7962A93762900F4FD70 /* VIP_IceCreamApp.swift */,
 				FB29E79A2A93762A00F4FD70 /* Assets.xcassets */,
 				FB29E7A42A93769E00F4FD70 /* Domain */,
+				FB29E7B82A93B9DB00F4FD70 /* Extensions */,
 				FB29E79C2A93762A00F4FD70 /* Preview Content */,
 			);
 			path = "VIP-IceCream";
@@ -108,8 +119,7 @@
 		FB29E7A72A9376DB00F4FD70 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				FB29E7AE2A93796B00F4FD70 /* CreateIceCreamView.swift */,
-				FB29E7B02A93853F00F4FD70 /* UIComponents */,
+				FB29E7B32A93B80000F4FD70 /* CreateIceCream */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -120,6 +130,27 @@
 				FB29E7B12A9385D600F4FD70 /* CreateIceCreamImageView.swift */,
 			);
 			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		FB29E7B32A93B80000F4FD70 /* CreateIceCream */ = {
+			isa = PBXGroup;
+			children = (
+				FB29E7BD2A93BBAF00F4FD70 /* CreateIceCreamConfigurator.swift */,
+				FB29E7B62A93B96A00F4FD70 /* CreateIceCreamInteractor.swift */,
+				FB29E7B42A93B81E00F4FD70 /* CreateIceCreamModel.swift */,
+				FB29E7BB2A93BA4B00F4FD70 /* CreateIceCreamPresenter.swift */,
+				FB29E7AE2A93796B00F4FD70 /* CreateIceCreamView.swift */,
+				FB29E7B02A93853F00F4FD70 /* UIComponents */,
+			);
+			path = CreateIceCream;
+			sourceTree = "<group>";
+		};
+		FB29E7B82A93B9DB00F4FD70 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FB29E7B92A93B9F200F4FD70 /* CodableBundleExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,11 +225,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB29E7992A93762900F4FD70 /* ContentView.swift in Sources */,
+				FB29E7BC2A93BA4B00F4FD70 /* CreateIceCreamPresenter.swift in Sources */,
+				FB29E7B72A93B96A00F4FD70 /* CreateIceCreamInteractor.swift in Sources */,
 				FB29E7972A93762900F4FD70 /* VIP_IceCreamApp.swift in Sources */,
+				FB29E7BE2A93BBAF00F4FD70 /* CreateIceCreamConfigurator.swift in Sources */,
 				FB29E7AB2A93774100F4FD70 /* IceCreamDataStore.swift in Sources */,
 				FB29E7B22A9385D600F4FD70 /* CreateIceCreamImageView.swift in Sources */,
+				FB29E7B52A93B81E00F4FD70 /* CreateIceCreamModel.swift in Sources */,
 				FB29E7AF2A93796B00F4FD70 /* CreateIceCreamView.swift in Sources */,
 				FB29E7A92A93770000F4FD70 /* IceCream.swift in Sources */,
+				FB29E7BA2A93B9F200F4FD70 /* CodableBundleExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

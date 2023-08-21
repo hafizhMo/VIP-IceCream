@@ -7,8 +7,21 @@
 
 import SwiftUI
 
-extension CreateIceCreamView {
-  // TODO: Call interactor to fetch data
+protocol CreateIceCreamDisplayLogic {
+  func displayIceCream(viewModel: CreateIceCream.LoadIceCream.ViewModel)
+}
+
+extension CreateIceCreamView: CreateIceCreamDisplayLogic {
+  func displayIceCream(viewModel: CreateIceCream.LoadIceCream.ViewModel) {
+    iceCream.displayedCones = viewModel.cones
+    iceCream.displayedFlavors = viewModel.flavors
+    iceCream.displayedToppings = viewModel.toppings
+  }
+
+  func fetchIceCream() {
+    let request = CreateIceCream.LoadIceCream.Request()
+    interactor?.loadIceCream(request: request)
+  }
 
   func showIceCreamImage() -> Bool {
     return selectedCone.isEmpty || selectedFlavor.isEmpty || selectedTopping.isEmpty
@@ -16,7 +29,7 @@ extension CreateIceCreamView {
 }
 
 struct CreateIceCreamView: View {
-  // TODO: Add interactor
+  var interactor: CreateIceCreamBusinessLogic?
 
   @ObservedObject var iceCream = IceCreamDataStore()
   @State private var selectedCone = ""
@@ -80,6 +93,9 @@ struct CreateIceCreamView: View {
         }
       }
       .navigationTitle("Ice Cream")
+      .onAppear {
+        fetchIceCream()
+      }
     }
     .navigationViewStyle(.stack)
   }
