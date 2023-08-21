@@ -52,11 +52,13 @@ struct CreateIceCreamView: View {
               Text($0)
             }
           }
+          .disabled(selectedCone.isEmpty)
           Picker("Choose a topping", selection: $selectedTopping) {
             ForEach(iceCream.displayedToppings, id: \.self) {
               Text($0)
             }
           }
+          .disabled(selectedFlavor.isEmpty)
         } header: {
           Text("Let's make ice cream!")
         }
