@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct VIP_IceCreamApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
+  let model = IceCreamDataStore()
+
+  var body: some Scene {
+    WindowGroup {
+      ContentView()
+        .environmentObject(model)
     }
+  }
 }
