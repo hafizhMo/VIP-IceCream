@@ -21,7 +21,21 @@
 		FB29E7BA2A93B9F200F4FD70 /* CodableBundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB29E7B92A93B9F200F4FD70 /* CodableBundleExtension.swift */; };
 		FB29E7BC2A93BA4B00F4FD70 /* CreateIceCreamPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB29E7BB2A93BA4B00F4FD70 /* CreateIceCreamPresenter.swift */; };
 		FB29E7BE2A93BBAF00F4FD70 /* CreateIceCreamConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB29E7BD2A93BBAF00F4FD70 /* CreateIceCreamConfigurator.swift */; };
+		FB29E7D52A93BE9F00F4FD70 /* CreateIceCreamPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB29E7D32A93BE9F00F4FD70 /* CreateIceCreamPresenterTests.swift */; };
+		FB29E7D62A93BE9F00F4FD70 /* CreateIceCreamInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB29E7D42A93BE9F00F4FD70 /* CreateIceCreamInteractorTests.swift */; };
+		FB29E7D82A93BEF900F4FD70 /* CreateIceCreamViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB29E7D72A93BEF900F4FD70 /* CreateIceCreamViewTests.swift */; };
+		FB29E7DA2A93C05C00F4FD70 /* Seeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB29E7D92A93C05C00F4FD70 /* Seeds.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FB29E7CC2A93BE6F00F4FD70 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB29E78B2A93762900F4FD70 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB29E7922A93762900F4FD70;
+			remoteInfo = "VIP-IceCream";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		FB29E7932A93762900F4FD70 /* VIP-IceCream.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VIP-IceCream.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,10 +53,22 @@
 		FB29E7B92A93B9F200F4FD70 /* CodableBundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableBundleExtension.swift; sourceTree = "<group>"; };
 		FB29E7BB2A93BA4B00F4FD70 /* CreateIceCreamPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateIceCreamPresenter.swift; sourceTree = "<group>"; };
 		FB29E7BD2A93BBAF00F4FD70 /* CreateIceCreamConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateIceCreamConfigurator.swift; sourceTree = "<group>"; };
+		FB29E7C82A93BE6F00F4FD70 /* VIP-IceCreamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VIP-IceCreamTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB29E7D32A93BE9F00F4FD70 /* CreateIceCreamPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateIceCreamPresenterTests.swift; sourceTree = "<group>"; };
+		FB29E7D42A93BE9F00F4FD70 /* CreateIceCreamInteractorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateIceCreamInteractorTests.swift; sourceTree = "<group>"; };
+		FB29E7D72A93BEF900F4FD70 /* CreateIceCreamViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateIceCreamViewTests.swift; sourceTree = "<group>"; };
+		FB29E7D92A93C05C00F4FD70 /* Seeds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Seeds.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		FB29E7902A93762900F4FD70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB29E7C52A93BE6F00F4FD70 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -56,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				FB29E7952A93762900F4FD70 /* VIP-IceCream */,
+				FB29E7C92A93BE6F00F4FD70 /* VIP-IceCreamTests */,
 				FB29E7942A93762900F4FD70 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				FB29E7932A93762900F4FD70 /* VIP-IceCream.app */,
+				FB29E7C82A93BE6F00F4FD70 /* VIP-IceCreamTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -153,6 +181,33 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		FB29E7C92A93BE6F00F4FD70 /* VIP-IceCreamTests */ = {
+			isa = PBXGroup;
+			children = (
+				FB29E7D12A93BE7500F4FD70 /* Scenes */,
+			);
+			path = "VIP-IceCreamTests";
+			sourceTree = "<group>";
+		};
+		FB29E7D12A93BE7500F4FD70 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				FB29E7D22A93BE8000F4FD70 /* CreateIceCream */,
+				FB29E7D92A93C05C00F4FD70 /* Seeds.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		FB29E7D22A93BE8000F4FD70 /* CreateIceCream */ = {
+			isa = PBXGroup;
+			children = (
+				FB29E7D42A93BE9F00F4FD70 /* CreateIceCreamInteractorTests.swift */,
+				FB29E7D32A93BE9F00F4FD70 /* CreateIceCreamPresenterTests.swift */,
+				FB29E7D72A93BEF900F4FD70 /* CreateIceCreamViewTests.swift */,
+			);
+			path = CreateIceCream;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -173,6 +228,24 @@
 			productReference = FB29E7932A93762900F4FD70 /* VIP-IceCream.app */;
 			productType = "com.apple.product-type.application";
 		};
+		FB29E7C72A93BE6F00F4FD70 /* VIP-IceCreamTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB29E7D02A93BE6F00F4FD70 /* Build configuration list for PBXNativeTarget "VIP-IceCreamTests" */;
+			buildPhases = (
+				FB29E7C42A93BE6F00F4FD70 /* Sources */,
+				FB29E7C52A93BE6F00F4FD70 /* Frameworks */,
+				FB29E7C62A93BE6F00F4FD70 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB29E7CD2A93BE6F00F4FD70 /* PBXTargetDependency */,
+			);
+			name = "VIP-IceCreamTests";
+			productName = "VIP-IceCreamTests";
+			productReference = FB29E7C82A93BE6F00F4FD70 /* VIP-IceCreamTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -185,6 +258,10 @@
 				TargetAttributes = {
 					FB29E7922A93762900F4FD70 = {
 						CreatedOnToolsVersion = 14.3.1;
+					};
+					FB29E7C72A93BE6F00F4FD70 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = FB29E7922A93762900F4FD70;
 					};
 				};
 			};
@@ -202,6 +279,7 @@
 			projectRoot = "";
 			targets = (
 				FB29E7922A93762900F4FD70 /* VIP-IceCream */,
+				FB29E7C72A93BE6F00F4FD70 /* VIP-IceCreamTests */,
 			);
 		};
 /* End PBXProject section */
@@ -214,6 +292,13 @@
 				FB29E7AD2A93789000F4FD70 /* icecream.json in Resources */,
 				FB29E79E2A93762A00F4FD70 /* Preview Assets.xcassets in Resources */,
 				FB29E79B2A93762A00F4FD70 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB29E7C62A93BE6F00F4FD70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,7 +323,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FB29E7C42A93BE6F00F4FD70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB29E7D62A93BE9F00F4FD70 /* CreateIceCreamInteractorTests.swift in Sources */,
+				FB29E7D52A93BE9F00F4FD70 /* CreateIceCreamPresenterTests.swift in Sources */,
+				FB29E7D82A93BEF900F4FD70 /* CreateIceCreamViewTests.swift in Sources */,
+				FB29E7DA2A93C05C00F4FD70 /* Seeds.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FB29E7CD2A93BE6F00F4FD70 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB29E7922A93762900F4FD70 /* VIP-IceCream */;
+			targetProxy = FB29E7CC2A93BE6F00F4FD70 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		FB29E79F2A93762A00F4FD70 /* Debug */ = {
@@ -413,6 +517,42 @@
 			};
 			name = Release;
 		};
+		FB29E7CE2A93BE6F00F4FD70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z824M97CF2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hafizhmo.VIP-IceCreamTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VIP-IceCream.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/VIP-IceCream";
+			};
+			name = Debug;
+		};
+		FB29E7CF2A93BE6F00F4FD70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z824M97CF2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hafizhmo.VIP-IceCreamTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VIP-IceCream.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/VIP-IceCream";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -430,6 +570,15 @@
 			buildConfigurations = (
 				FB29E7A22A93762A00F4FD70 /* Debug */,
 				FB29E7A32A93762A00F4FD70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB29E7D02A93BE6F00F4FD70 /* Build configuration list for PBXNativeTarget "VIP-IceCreamTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB29E7CE2A93BE6F00F4FD70 /* Debug */,
+				FB29E7CF2A93BE6F00F4FD70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
